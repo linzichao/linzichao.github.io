@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #tissue {
+      position: relative;
+      cursor: pointer;
+    }
+    img#tissue {
+      top: 200px;
+      left: 0px;
+    }
+  </style>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+  <script>
+    const TOPIC = "tissue";
+    var client = false;
+
+    function onConnect() {
+    }
+
+    function onMessageArrived(message) {
+        console.log("onMessageArrived:"+message.payloadString);
+        document.getElementById("mqtt_monitor").innerHTML = message.payloadString;
+    }
+
+    function publish_message() {
+        var payload = "hi";
+        var message = new Paho.MQTT.Message(payload);
+        message.destinationName = TOPIC;
+        client.send(message);
+    }
+
+    function init() {
+        document.getElementById("tissue").addEventListener('click', publish_message);
+        client = new Paho.MQTT.Client("wss://hope.cs.nccu.edu.tw:9001/", "myClientId");
+
+        client.onMessageArrived = onMessageArrived;
+
+        client.connect({onSuccess:onConnect});
+    }
+
+    window.addEventListener('load', init, false);
+  </script>
+  <script>
+    function move_image() {
+      let tissue = document.getElementById('tissue');
+
+      let start = Date.now();
+      let pos = 0;
+      if(parseInt(tissue.style.left) === 700 )
+        pos = 1;
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        if(pos)
+            tissue.style.left = 700 - timePassed / 5 + 'px';
+        else
+            tissue.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 3500) clearInterval(timer);
+
+      }, 20);
+    }
+    // document.getElementById("tissue").addEventListener('click', move_image);
+  </script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+  <script>
+    //listen to shake event
+    var shakeEvent = new Shake({threshold: 15});
+    shakeEvent.start();
+    window.addEventListener('shake', function(){
+        //alert("Shaked");
+        publish_message();
+        move_image();
+    }, false);
+
+    //stop listening
+    function stopShake(){
+        shakeEvent.stop();
+    }
+
+    //check if shake is supported or not.
+    if(!("ondevicemotion" in window)){alert("Not Supported");}
+  </script>
+</head>
+
+<body bgcolor="#39C5BB">
+  <div style="height: 500px;">
+    <img id="tissue" src="./tissues.png">
+  </div>
+  <div>
+    <h1 align="center">基於物聯網的智慧型衛生紙推送系統之研究與實作</h1>
+  </div>
+  <script>
+    tissue.onclick = move_image;
+  </script>
+</body>
+
+</html>
