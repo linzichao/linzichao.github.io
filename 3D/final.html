@@ -1,0 +1,274 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../semantic/out/semantic.min.css">
+	<script
+		  src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous"></script>
+	<script src="../semantic/out/semantic.min.js"></script>
+	<style type="text/css">
+
+			.ui.inverted.segment {
+
+					background-image: url('./images/background.png');
+					background-size: 100% 100%;
+					background-repeat: no-repeat; 
+
+			}
+
+			.hidden.menu {
+			  display: none;
+			}
+		
+			.masthead.segment {
+			  min-height: 700px;
+			  padding: 1em 0em;
+			}
+			.masthead .logo.item img {
+			  margin-right: 1em;
+			}
+			.masthead .ui.menu .ui.button {
+			  margin-left: 0.5em;
+			}
+			.masthead h1.ui.header {
+			  margin-top: 100px;
+			  margin-bottom: 0em;
+			  font-size: 4em;
+			  font-weight: normal;
+			}
+			.masthead h2 {
+			  font-size: 1.7em;
+			  font-weight: normal;
+			}
+		
+			.ui.vertical.stripe {
+			  padding: 8em 0em;
+			}
+			.ui.vertical.stripe h3 {
+			  font-size: 2em;
+			}
+			.ui.vertical.stripe .button + h3,
+			.ui.vertical.stripe p + h3 {
+			  margin-top: 3em;
+			}
+			.ui.vertical.stripe .floated.image {
+			  clear: both;
+			}
+			.ui.vertical.stripe p {
+			  font-size: 1.33em;
+			}
+			.ui.vertical.stripe .horizontal.divider {
+			  margin: 3em 0em;
+			}
+		
+			.quote.stripe.segment {
+			  padding: 0em;
+			}
+			.quote.stripe.segment .grid .column {
+			  padding-top: 5em;
+			  padding-bottom: 5em;
+			}
+		
+			.footer.segment {
+			  padding: 5em 0em;
+			}
+		
+			.secondary.pointing.menu .toc.item {
+			  display: none;
+			}
+		
+			@media only screen and (max-width: 700px) {
+			  .ui.fixed.menu {
+				display: none !important;
+			  }
+			  .secondary.pointing.menu .item,
+			  .secondary.pointing.menu .menu {
+				display: none;
+			  }
+			  .secondary.pointing.menu .toc.item {
+				display: block;
+			  }
+			  .masthead.segment {
+				min-height: 350px;
+			  }
+			  .masthead h1.ui.header {
+				font-size: 2em;
+				margin-top: 1.5em;
+			  }
+			  .masthead h2 {
+				margin-top: 0.5em;
+				font-size: 1.5em;
+			  }
+			}
+			
+			#second {
+				margin-top: 300px;
+			}
+			
+			#first {
+				margin-top: 80px;
+			}
+
+
+
+	</style>
+	<script>
+		$(document)
+		  .ready(function() {
+	  
+			// fix menu when passed
+			$('.masthead')
+			  .visibility({
+				once: false,
+				onBottomPassed: function() {
+				  $('.fixed.menu').transition('fade in');
+				},
+				onBottomPassedReverse: function() {
+				  $('.fixed.menu').transition('fade out');
+				}
+			  })
+			;
+	  
+			// create sidebar and attach to menu open
+			$('.ui.sidebar')
+			  .sidebar('attach events', '.toc.item')
+			;
+	  
+		  });
+
+
+
+</script>
+</head>		
+<body class="pushable">
+	<div class="ui large top fixed menu transition hidden">
+		<div class="ui container">
+			<a class="active item" href="#home">Home</a>
+			<a class="item" href="#image">Intro</a>
+			<a class="item" href="#readme">Readme</a>
+			<a class="item" href="#video">Video</a>
+			<a class="item" href="#ref">Ref</a>
+		</div>
+	</div>
+	<div class="ui vertical inverted sidebar menu left" style>
+			<a class="active item" href="#home">Home</a>
+			<a class="item" href="#image">Intro</a>
+			<a class="item" href="#readme">Readme</a>
+			<a class="item" href="#video">Video</a>
+			<a class="item" href="#ref">Ref</a>
+	</div>
+	<div class="pusher">
+		<div class="ui inverted vertical masthead center aligned segment" id="home">		
+			<div class="ui container">
+				<div class="ui large secondary inverted pointing menu">
+				<a class="toc item">
+					<i class="sidebar icon"></i>
+				</a>
+				<a class="active item" href="#home">Home</a>
+				<a class="item" href="#image">Intro</a>
+				<a class="item" href="#readme">Readme</a>
+				<a class="item" href="#video">Video</a>
+				<a class="item" href="#ref">Ref</a>
+			</div>
+			<div class="ui text container">
+				<h1 class="ui inverted header">
+				3D Game Programming </br>
+				Wake up at dawn
+				</h1>
+				<h2>103703029 資科四 朱光愷</h2>
+				<h2>104703033 資科三 張育翔</h2>
+				<h2>104703042 資科三 林資超</h2>
+				<h2>104703040 資科三 郭芷瑄</h2>
+			</div>		
+			</div>
+		</div>	
+		<div class="ui vertical stripe segment" id="image">
+			<div class="ui middle aligned stackable grid container">
+				<div class="row">
+					<div class="eight wide column">
+						
+						<h3 class="ui header">URL for Project</h3>
+						<a href="https://linzichao.github.io/3D/final.html">
+							<font size="5">Link</font>
+						</a>
+
+						</br>
+						</br>
+
+						<h3 class="ui header" id="first">遊戲故事</h3>
+						<p>
+						生日前夕，即將就寢的女孩，Emily，發在爸爸的模樣有些詭異，
+						於是她決定起床照顧爸爸。但等著她的會是永無止境的惡夢，或是
+						超脫常理的現實？
+						</p>
+						
+						<h3 class="ui header" id="second">遊戲玩法</h3>
+						<p>
+						玩家將扮演一名小女孩，在家中進行探索、與物件互動，並通過推理，
+						解開各式謎題，收集物品，推進劇情，並且逃離襲來的惡意......
+						</p>
+					</div>
+					<div class="six wide right floated column">
+							<a href="https://imgur.com/YKUMiBK"><img src="./images/image2.png" class="ui large bordered rounded image"></a>
+					</div>
+					<div class="six wide right floated column">
+							<a href="https://imgur.com/SZgVJGi"><img src="./images/bathroom.png" class="ui large bordered rounded image"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui vertical stripe segment" id="readme">
+			<div class="ui text container">
+				<h3 class="ui header">操作方式</h3>
+				<ul>
+						<li>人物移動：&nbsp;W,S鍵控制玩家前後移動，滑鼠控制玩家視角</li>
+						<li>解謎：&nbsp;使用鍵盤輸入文字、滑鼠點擊觸發物品或點選按鈕</li>
+						<li>背包：&nbsp;F1功能鍵打開背包，ESC退出背包</li>
+				</ul>
+				<h3 class="ui header">遊戲截圖</h3>
+				<div class="row">
+						<div class="eight wide column">
+							<div><a href="https://imgur.com/1dwFiTk"><img src="./images/toilet.png" style="width: 33%; height: 130px;"></img></a>
+									 <a href="https://imgur.com/mfsCyIg"><img src="./images/kitchen.png" style="width: 33%; height: 130px;"></img></a>
+									 <a href="https://imgur.com/l7V3Jxx"><img src="./images/livingroom.png" style="width: 33%; height: 130px;"></img></a>
+							</div>
+							<div><a href="https://imgur.com/Gj1611s"><img src="./images/bedroom.png" style="width: 33%; height: 130px;"></img></a>
+									 <a href="https://imgur.com/dAqAEq2"><img src="./images/key.png" style="width: 33%; height: 130px;"></img></a>
+									 <a href="https://imgur.com/upQNj0C"><img src="./images/puzzle.png" style="width: 33%; height: 130px;"></img></a>
+							 </div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui vertical stripe segment" id="video">
+				<div class="ui text container">		
+					<h3 class="ui header">影片展示</h3>
+					<iframe src="https://youtube.com/embed/6LAH3RXv6-4" height="400" width="700">
+					</iframe>
+				</div>
+		</div>
+
+		<div class="ui vertical stripe segment" id="ref">
+				<div class="ui text container">		
+					<h3 class="ui header">外部素材</h3>
+					<ul>
+							<li>Houses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.cgtrader.com/
+							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							https://free3d.com/
+							</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							https://www.assetstore.unity3d.com/en/
+					    </li>
+							<li>壁紙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.burkedecor.com/collections/textured-wallpaper/products/aidan-silver-texture-wallpaper-design-by-brewster-home-fashions</li>
+							<li>信紙背景&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://doreens-briefpapierwelt.de/LetterPaper-Autumn-Glory-Idea-Art</li>
+							<li>https://freesound.org/people/lennyboy/sounds/244417/</li>
+							<li>https://freesound.org/people/InspectorJ/sounds/370936/</li>
+							<li>https://freesound.org/people/Creeper_Ciller78/sounds/339189/</li>
+							<li>https://freesound.org/people/Ryding/sounds/110141/</li>
+							<li>https://freesound.org/people/kickhat/sounds/264495/</li>
+							<li>https://www.youtube.com/watch?v=CFZ9g9vEdbE</li>
+					</ul>	
+				</div>
+		</div>
+	</div>
+</body>
+</html>
