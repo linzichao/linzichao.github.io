@@ -6,6 +6,7 @@
 		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		  crossorigin="anonymous"></script>
 	<script src="../semantic/out/semantic.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<style type="text/css">
 
 			.ui.inverted.segment {
@@ -110,7 +111,6 @@
 			}
 
 
-
 	</style>
 	<script>
 		$(document)
@@ -131,31 +131,40 @@
 	  
 			// create sidebar and attach to menu open
 			$('.ui.sidebar')
-			  .sidebar('attach events', '.toc.item')
-			;
-	  
-		  });
+			  .sidebar('attach events', '.toc.item');
+			});
 
+			$(document).on('click', 'a[href^="#"]', function (event) {
+				event.preventDefault();
 
+				$('html, body').animate({
+						scrollTop: $($.attr(this, 'href')).offset().top
+				}, 1000);
+			});			
+			
+			window.sr = ScrollReveal({ duration: 2000 , reset: true , origin: 'right'});	
 
-</script>
+			if (sr.isSupported()) {
+        document.documentElement.classList.add('sr');
+      }
+
+	</script>
+	<style>
+		
+		.sr .fade #img1 #img2{ visibility: hidden;}
+
+	</style>
 </head>		
 <body class="pushable">
 	<div class="ui large top fixed menu transition hidden">
 		<div class="ui container">
 			<a class="active item" href="#home">Home</a>
 			<a class="item" href="#image">Intro</a>
+			<a class="item" href="#gaming">Gaming</a>
 			<a class="item" href="#readme">Readme</a>
 			<a class="item" href="#video">Video</a>
 			<a class="item" href="#ref">Ref</a>
 		</div>
-	</div>
-	<div class="ui vertical inverted sidebar menu left" style>
-			<a class="active item" href="#home">Home</a>
-			<a class="item" href="#image">Intro</a>
-			<a class="item" href="#readme">Readme</a>
-			<a class="item" href="#video">Video</a>
-			<a class="item" href="#ref">Ref</a>
 	</div>
 	<div class="pusher">
 		<div class="ui inverted vertical masthead center aligned segment" id="home">		
@@ -166,6 +175,7 @@
 				</a>
 				<a class="active item" href="#home">Home</a>
 				<a class="item" href="#image">Intro</a>
+				<a class="item" href="#gaming">Gaming</a>
 				<a class="item" href="#readme">Readme</a>
 				<a class="item" href="#video">Video</a>
 				<a class="item" href="#ref">Ref</a>
@@ -182,7 +192,7 @@
 			</div>		
 			</div>
 		</div>	
-		<div class="ui vertical stripe segment" id="image">
+		<div class="ui vertical stripe segment" id="image" style="height: 699px;">
 			<div class="ui middle aligned stackable grid container">
 				<div class="row">
 					<div class="eight wide column">
@@ -200,21 +210,29 @@
 						生日前夕，即將就寢的女孩，Emily，發在爸爸的模樣有些詭異，
 						於是她決定起床照顧爸爸。但等著她的會是永無止境的惡夢，或是
 						超脫常理的現實？
-						</p>
-						
-						<h3 class="ui header" id="second">遊戲玩法</h3>
-						<p>
-						玩家將扮演一名小女孩，在家中進行探索、與物件互動，並通過推理，
-						解開各式謎題，收集物品，推進劇情，並且逃離襲來的惡意......
-						</p>
+						</p>						
+
 					</div>
-					<div class="six wide right floated column">
+					<div id="img1" class="six wide right floated column">
 							<a href="https://imgur.com/YKUMiBK"><img src="./images/image2.png" class="ui large bordered rounded image"></a>
 					</div>
-					<div class="six wide right floated column">
-							<a href="https://imgur.com/SZgVJGi"><img src="./images/bathroom.png" class="ui large bordered rounded image"></a>
-					</div>
 				</div>
+			</div>
+		</div>
+		<div class="ui vertical stripe segment" id="gaming" style="height: 699px;">
+			<div class="ui middle aligned stackable grid container">
+					<div class="row">
+							<div class="eight wide column">
+									<h3 class="ui header" id="second" style="margin-top: 150px;">遊戲玩法</h3>
+									<p>
+									玩家將扮演一名小女孩，在家中進行探索、與物件互動，並通過推理，
+									解開各式謎題，收集物品，推進劇情，並且逃離襲來的惡意......
+									</p>	
+							</div>
+							<div id="img2" class="six wide right floated column">
+									<a href="https://imgur.com/SZgVJGi"><img src="./images/bathroom.png" class="ui large bordered rounded image"></a>
+							</div>
+					</div>
 			</div>
 		</div>
 		<div class="ui vertical stripe segment" id="readme">
@@ -228,11 +246,11 @@
 				<h3 class="ui header">遊戲截圖</h3>
 				<div class="row">
 						<div class="eight wide column">
-							<div><a href="https://imgur.com/1dwFiTk"><img src="./images/toilet.png" style="width: 33%; height: 130px;"></img></a>
+							<div class="fade"><a href="https://imgur.com/1dwFiTk"><img src="./images/toilet.png" style="width: 33%; height: 130px;"></img></a>
 									 <a href="https://imgur.com/mfsCyIg"><img src="./images/kitchen.png" style="width: 33%; height: 130px;"></img></a>
 									 <a href="https://imgur.com/l7V3Jxx"><img src="./images/livingroom.png" style="width: 33%; height: 130px;"></img></a>
 							</div>
-							<div><a href="https://imgur.com/Gj1611s"><img src="./images/bedroom.png" style="width: 33%; height: 130px;"></img></a>
+							<div class="fade"><a href="https://imgur.com/Gj1611s"><img src="./images/bedroom.png" style="width: 33%; height: 130px;"></img></a>
 									 <a href="https://imgur.com/dAqAEq2"><img src="./images/key.png" style="width: 33%; height: 130px;"></img></a>
 									 <a href="https://imgur.com/upQNj0C"><img src="./images/puzzle.png" style="width: 33%; height: 130px;"></img></a>
 							 </div>
@@ -248,7 +266,7 @@
 				</div>
 		</div>
 
-		<div class="ui vertical stripe segment" id="ref">
+		<div class="ui vertical stripe segment" id="ref" style="height: 699px;">
 				<div class="ui text container">		
 					<h3 class="ui header">外部素材</h3>
 					<ul>
@@ -271,4 +289,9 @@
 		</div>
 	</div>
 </body>
+<script>
+	sr.reveal('#img1');
+	sr.reveal('#img2');
+	sr.reveal('.fade',50);
+</script>
 </html>
