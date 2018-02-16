@@ -1,0 +1,12 @@
+body{
+    font-family:"MS Trebuchet","ITC Avant Garde Gothic","MS Arial","MS Verdana",Univers,Futura,"ITC Stone Sans","Gill Sans","Akzidenz Grotesk",Helvetica;
+}
+
+div{margin:5px;border:1px;padding:1px;}
+
+img{
+    display: block;
+    width: 280px;
+    height: 350px;
+    float: right;
+}
