@@ -1,12 +1,23 @@
+html{
+    padding: 1cm;
+    background-clip: content-box;
+    box-shadow: inset 0 0 0 1cm #b3e6b3;
+}
+
 body{
     font-family:"MS Trebuchet","ITC Avant Garde Gothic","MS Arial","MS Verdana",Univers,Futura,"ITC Stone Sans","Gill Sans","Akzidenz Grotesk",Helvetica;
 }
 
 div{margin:5px;border:1px;padding:1px;}
 
-img{
+#zichao {
     display: block;
     width: 280px;
     height: 350px;
     float: right;
+}
+
+#github {
+    width: 30px;
+    height: 30px;
 }
