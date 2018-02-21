@@ -10,6 +10,18 @@ body{
 
 div{margin:5px;border:1px;padding:1px;}
 
+.btn {
+    border-radius: 5px;
+    background-color: #e7e7e7; 
+    color: black;
+}
+
+.octicon {
+    display: inline-block;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
 #zichao {
     display: block;
     width: 280px;
@@ -17,7 +29,6 @@ div{margin:5px;border:1px;padding:1px;}
     float: right;
 }
 
-#github {
-    width: 30px;
-    height: 30px;
+#github-link{
+    vertical-align: text-top; 
 }
