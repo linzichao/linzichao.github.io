@@ -41,6 +41,8 @@ a:focus {
 }
 p {
   line-height: 1.5;
+  text-align: justify;
+  text-justify:inter-ideograph;
 }
 .wrapper {
   background: #5BB66F;
@@ -109,7 +111,7 @@ p {
   margin-top: 0;
   margin-bottom: 15px;
 }
-.sidebar-wrapper .degree {
+.sidebar-wrapper .degree, .grade {
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 5px;
