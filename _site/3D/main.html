@@ -1,0 +1,227 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../semantic/out/semantic.min.css">
+	<script
+		  src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous"></script>
+	<script src="../semantic/out/semantic.min.js"></script>
+	<style type="text/css">
+		
+			.hidden.menu {
+			  display: none;
+			}
+		
+			.masthead.segment {
+			  min-height: 700px;
+			  padding: 1em 0em;
+			}
+			.masthead .logo.item img {
+			  margin-right: 1em;
+			}
+			.masthead .ui.menu .ui.button {
+			  margin-left: 0.5em;
+			}
+			.masthead h1.ui.header {
+			  margin-top: 3em;
+			  margin-bottom: 0em;
+			  font-size: 4em;
+			  font-weight: normal;
+			}
+			.masthead h2 {
+			  font-size: 1.7em;
+			  font-weight: normal;
+			}
+		
+			.ui.vertical.stripe {
+			  padding: 8em 0em;
+			}
+			.ui.vertical.stripe h3 {
+			  font-size: 2em;
+			}
+			.ui.vertical.stripe .button + h3,
+			.ui.vertical.stripe p + h3 {
+			  margin-top: 3em;
+			}
+			.ui.vertical.stripe .floated.image {
+			  clear: both;
+			}
+			.ui.vertical.stripe p {
+			  font-size: 1.33em;
+			}
+			.ui.vertical.stripe .horizontal.divider {
+			  margin: 3em 0em;
+			}
+		
+			.quote.stripe.segment {
+			  padding: 0em;
+			}
+			.quote.stripe.segment .grid .column {
+			  padding-top: 5em;
+			  padding-bottom: 5em;
+			}
+		
+			.footer.segment {
+			  padding: 5em 0em;
+			}
+		
+			.secondary.pointing.menu .toc.item {
+			  display: none;
+			}
+		
+			@media only screen and (max-width: 700px) {
+			  .ui.fixed.menu {
+				display: none !important;
+			  }
+			  .secondary.pointing.menu .item,
+			  .secondary.pointing.menu .menu {
+				display: none;
+			  }
+			  .secondary.pointing.menu .toc.item {
+				display: block;
+			  }
+			  .masthead.segment {
+				min-height: 350px;
+			  }
+			  .masthead h1.ui.header {
+				font-size: 2em;
+				margin-top: 1.5em;
+			  }
+			  .masthead h2 {
+				margin-top: 0.5em;
+				font-size: 1.5em;
+			  }
+			}
+		
+		
+	</style>
+	<script>
+		$(document)
+		  .ready(function() {
+	  
+			// fix menu when passed
+			$('.masthead')
+			  .visibility({
+				once: false,
+				onBottomPassed: function() {
+				  $('.fixed.menu').transition('fade in');
+				},
+				onBottomPassedReverse: function() {
+				  $('.fixed.menu').transition('fade out');
+				}
+			  })
+			;
+	  
+			// create sidebar and attach to menu open
+			$('.ui.sidebar')
+			  .sidebar('attach events', '.toc.item')
+			;
+	  
+		  })
+		;
+	</script>
+</head>		
+<body class="pushable">
+	<div class="ui large top fixed menu transition hidden">
+		<div class="ui container">
+			<a class="active item" href="#home">Home</a>
+			<a class="item" href="#image">Image</a>
+			<a class="item" href="#readme">Readme</a>
+			<a class="item" href="#video">Video</a>
+		</div>
+	</div>
+	<div class="ui vertical inverted sidebar menu left" style>
+			<a class="active item" href="#home">Home</a>
+			<a class="item" href="#image">Image</a>
+			<a class="item" href="#readme">Readme</a>
+			<a class="item" href="#video">Video</a>
+	</div>
+	<div class="pusher">
+		<div class="ui inverted vertical masthead center aligned segment" id="home">		
+			<div class="ui container">
+				<div class="ui large secondary inverted pointing menu">
+				<a class="toc item">
+					<i class="sidebar icon"></i>
+				</a>
+				<a class="active item" href="#home">Home</a>
+				<a class="item" href="#image">Image</a>
+				<a class="item" href="#readme">Readme</a>
+				<a class="item" href="#video">Video</a>
+			</div>
+			<div class="ui text container">
+				<h1 class="ui inverted header">
+				3D Game Programming Homework3
+				</h1>
+				<h2>104703042 資科三 林資超</h2>
+			</div>		
+			</div>
+		</div>	
+		<div class="ui vertical stripe segment" id="image">
+			<div class="ui middle aligned stackable grid container">
+				<div class="row">
+					<div class="eight wide column">
+						
+						<h3 class="ui header">URL for Project</h3>
+						<a href="https://linzichao.github.io/3D/main.html">
+							<font size="5">Link</font>
+						</a>
+
+						<h3 class="ui header">場景說明</h3>
+						<p>
+						龍的起源地</br>
+						"稱霸於上古時代的物種—-龍，似乎也曾與人類和平共存過，
+						這個地方地形崎嶇、天氣複雜多變，好像在暗示著，
+						想和龍一起生活，也要有著超越凡人的氣息與堅毅之心。"
+						</p>
+						
+						<h3 class="ui header">運鏡說明</h3>
+						<p>
+						將camera置於GameObject上，在幾個視野良好的位置設置point，
+						GameObject會以固定的path，經過這幾個point，並在point進行rotate，
+						藉此來達到運鏡的移動、視角的變化。
+						</p>
+					</div>
+					<div class="six wide right floated column">
+							<img src="./image.png" class="ui large bordered rounded image">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui vertical stripe segment" id="readme">
+			<div class="ui text container">
+				<h3 class="ui header">特色與額外功能</h3>
+				<ul>
+					<li>BGM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;讓觀眾更能身歷其境的音樂。</li>
+					<li>Particle System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;製作雨和雪，來模擬多變的天氣。</li>
+					<li>四大地形&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冰山、綠地、巨岩、湖泊。</li>
+					<li>特色說明&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;利用多個package的地形、材質與物件，在同一個scene中，
+					做到複雜的環境。</li>
+				</ul>
+				<h3 class="ui header">素材版權</h3>
+				<ul>
+						<li>BGM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.youtube.com/watch?v=Q8DHuu1INUY</li>
+						<li>Dragon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://free3d.com/3d-model/dragon-27353.html</li>
+						<li>Houses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://free3d.com/3d-model/small-building-1-22802.html
+								</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								https://free3d.com/3d-model/small-city-building-2-65522.html
+								</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								https://free3d.com/3d-model/medieval-house-86882.html	
+						</li>
+						<li>Snow Mountain@Unity Asset Store</li>
+						<li>Skybox@Unity Asset Store</li>
+						<li>Grass Texture: Grass And Flowers Pack1@Unity Asset Store</li>
+						<li>Mountain Terrain + Rock + Tree@Unity Asset Store</li>
+						<li>Rocks Pack@Unity Asset Store</li>
+				</ul>
+			</div>
+		</div>
+		<div class="ui vertical stripe segment" id="video">
+				<div class="ui text container">		
+					<h3 class="ui header">影片展示</h3>
+					<iframe src="https://youtube.com/embed/It-ADA8uUGc" height="400" width="700">
+					</iframe>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
