@@ -100,5 +100,5 @@ Software & Tools:
 Languages:
 <ul>
 	<li>Chinese</li>
-	<li>English (TOEFL:104, GRE:322)</li>
+	<li>English (GRE:322/340, TOEFL:104/120, TOEIC:910/990)</li>
 </ul>
