@@ -53,6 +53,16 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 	<li><b>Surveyed internet protocols for sensor nodes in home networks, including ICMPv6 and MQTT-SN</b></li>
 	<li><b>Implemented a Lua-based plugin on Wireshark for network monitoring</b></li>
 </ul>
+<u>Teaching Assistant</u>, Object-Oriented Programming, [C++], Sep.2018 - Jan.2019
+<ul>
+	<li><b>Taught different aspects of Object-Oriented Programming using C++ in TA office hours every week</b></li>
+	<li><b>Prepared class materials and graded homework</b></li>
+</ul>
+<u>Teaching Assistant</u>, Programming 101, [Python], Feb.2018 - Jun.2018
+<ul>
+	<li><b>Taught the basic syntax of Python and advised on final projects during TA office hours</b></li>
+	<li><b>Facilitated and managed about one hundred students</b></li>
+</ul>
 
 <h4>Academia Sinica, Taiwan</h4>
 <u>Summer Intern</u>@<a href="https://clip.csie.org/">CFDA & CLIP Labs</a>, [Python, Node.js], Jul.2018 - Aug.2018
@@ -72,7 +82,7 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 
 <h2>Publications</h2>
 <ol>
-	<li><u>Zi-Chao Lin</u> and Chun-Feng Liao, “ICMPv6SD: A Compact Service Discovery Protocol Supporting Plug-and-Play in Home Networks,” in Proc. International Conference on Platform Technology and Service (PlatCon’19), Jeju, Korea, 2019. <a href="https://ieeexplore.ieee.org/abstract/document/8669421">[paper]</a></li>
+	<li><u>Zi-Chao Lin</u> and Chun-Feng Liao, “ICMPv6SD: A Compact Service Discovery Protocol Supporting Plug-and-Play in Home Networks,” in Proc. International Conference on Platform Technology and Service (PlatCon’19), Jeju, Korea, 2019. <a href="https://ieeexplore.ieee.org/abstract/document/8669421">[paper]</a> <a href="https://www.slideshare.net/linzichao/platcon19-icmpv6sd">[slides]</a></li>
 	<li><u>Zi-Chao Lin</u> and Chun-Feng Liao, “A Lightweight Plug-and-Play Home Service Management Scheme based on ICMPv6,” in Taiwan Conference on Software Engineering (TCSE), Tainan, Taiwan, 2018. (In Chinese)</li>
 </ol>
 
