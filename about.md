@@ -87,6 +87,31 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 </ol>
 
 <hr>
+<h2>Projects</h2>
+<u>Web Application for Data Visualization</u>, [R], Jun.2019
+<ul>
+	<li><b>Built a Shiny application for data visualization by R</b></li>
+	<li><b>Designed intuitive and efficient user interface and deployed to shinyapps.io</b></li>
+</ul>
+
+<u>iCourse</u>, [Ruby on Rails], Jun.2018
+<ul>
+	<li><b>Implemented a system for course selection with real course information in NCCU using Ruby on Railsframework and performed unit tests with RSpec</b></li>
+</ul>
+
+<u>2D Action-adventure Game</u>, [Unity, C#], Jan.2018
+<ul>
+	<li><b>Created a 2D game by Unity and demoed to the class</b></li>
+</ul>
+
+<u>3D First Personal Shooting Game</u>, [Unity, C#], Jan.2018
+<ul>
+	<li><b>CDesigned a 3D shooting game using Unity, where players can shoot zombies and protect the base</b></li>
+</ul>
+
+
+
+<hr>
 
 <h2>Technical Skills and Strengths</h2>
 Programming:
