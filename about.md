@@ -88,17 +88,27 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 
 <hr>
 
-<h2>Technical Skills and Strengths</h2>
-Programming:
+<h2>Leadership And Activities</h2>
+<a href="https://sitcon.org/2018/">SITCON</a>, Academia Sinica, Mar.2018
 <ul>
-	<li>Python, Javascript, Java, C#, C/C++, SQL</li>
+	<li><u>Participant</u></li>
 </ul>
-Software & Tools:
+
+Computer Science Student Association, NCCU, Sep.2016 - Jun.2017
 <ul>
-	<li>AWS, GCP, Heroku, Git, Tensorflow</li>
+	<li><u>Equipment Officer</u></li>
+	<li><b>Managed the property of computer science student association</b></li>
+	<li><b>Held a Christmas party for all students in the department of computer science</b></li>
+	<li><b>Assisted in organizing a summer camp for high school students to learn programming</b></li>
 </ul>
-Languages:
+
+Cook Club, NCCU, Sep.2016 - Jan.2017
 <ul>
-	<li>Chinese - Native</li>
-	<li>English - Fluent (GRE:322/340, TOEFL:104/120, TOEIC:910/990)</li>
+	<li><b>Made cakes and desserts and shared with club members once a week</b></li>
+</ul>
+
+Save the Childhood Movement, <a href="https://www.waker.org.tw/">Waker Foundation</a>, Aug.2014 - Sep.2014
+<ul>
+	<li><u>International Volunteer</u></li>
+	<li><b>Taught English for children in rural areas in Thailand</b></li>
 </ul>
