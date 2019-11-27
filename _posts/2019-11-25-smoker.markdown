@@ -12,5 +12,5 @@ externalLink: https://github.com/linzichao/OS_smoker
 github: https://github.com/linzichao/OS_smoker
 radius: 0%
 height: 50px
-web: true
+desktop: true
 ---

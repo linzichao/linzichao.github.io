@@ -12,6 +12,9 @@ title: Projects
     .proj-list-tag.tag2 {
         background-color: #FFCC11;
     }
+    .proj-list-tag.tag3 {
+        background-color: #CCCC00;
+    }
     .proj-list-tag {
         color: rgba(0,0,0,0.87);
         border-radius: 5px;
@@ -31,6 +34,7 @@ title: Projects
                 {% if post.web %}<span class="proj-list-tag tag0">Web</span>{% endif %}
                 {% if post.unity %}<span class="proj-list-tag tag1">Unity</span>{% endif %}
                 {% if post.chatbot %}<span class="proj-list-tag tag2">Chatbot</span>{% endif %}
+                {% if post.desktop %}<span class="proj-list-tag tag3">Desktop</span>{% endif %}
                 <ul style="padding-left: 120px;margin-top: -20px;margin-right: 70px;">
                     <li>{{post.description}} {% if post.github %}<a href="{{ post.github }}" style="vertical-align:middle;">:octocat:</a>{% endif %}</li>
                 </ul>
