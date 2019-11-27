@@ -1,0 +1,16 @@
+---
+title: "Cigarette smokers problem"
+layout: post
+date: 2017-12-27 23:59
+image: ../assets/images/cigarette.png
+headerImage: true
+projects: true
+description: "An application for resolving cigarette smokers problem"
+category: project
+author: linzichao
+externalLink: https://github.com/linzichao/OS_smoker
+github: https://github.com/linzichao/OS_smoker
+radius: 0%
+height: 50px
+web: true
+---

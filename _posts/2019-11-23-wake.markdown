@@ -1,0 +1,15 @@
+---
+title: "Wake up at dawn"
+layout: post
+date: 2018-01-15 23:59
+image: ../assets/images/wake.png
+headerImage: true
+projects: true
+description: "A 3D survival horror game developed by Unity, where players need to escape from the haunted house"
+category: project
+author: linzichao
+externalLink: https://linzichao.github.io/3D_final/index.html
+radius: 0%
+height: 60px
+unity: true
+---

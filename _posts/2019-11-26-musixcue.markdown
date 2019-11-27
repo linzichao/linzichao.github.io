@@ -1,0 +1,16 @@
+---
+title: "MusixCue"
+layout: post
+date: 2018-07-01 23:59
+image: ../assets/images/music.png
+headerImage: true
+projects: true
+description: "Developed a music forum and provided commented function"
+category: project
+author: linzichao
+externalLink: https://github.com/linzichao/MusixCue
+github: https://github.com/linzichao/MusixCue
+radius: 10%
+height: 30px
+web: true
+---

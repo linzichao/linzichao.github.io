@@ -1,0 +1,16 @@
+---
+title: "iCourse"
+layout: post
+date: 2018-06-30 23:59
+image: https://i.imgur.com/vFzQDEP.png
+headerImage: true
+projects: true
+description: "Implemented a system for course selection with real course information in NCCU using Ruby on Rails framework and performed unit tests with RSpec"
+category: project
+author: linzichao
+externalLink: https://github.com/nccucsmember/iCourse
+github: https://github.com/nccucsmember/iCourse
+radius: 50%
+height: 50px
+web: true
+---

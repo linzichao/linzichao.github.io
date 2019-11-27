@@ -1,0 +1,15 @@
+---
+title: "Interactive web service of PCA analysis"
+layout: post
+date: 2019-04-23 23:59
+image: ../assets/images/pedal.png
+headerImage: true
+projects: true
+description: "Built a Shiny application to visualize Anderson's Iris dataset by R"
+category: project
+author: linzichao
+externalLink: https://linzichao.shinyapps.io/hw3-linzichao
+radius: 50%
+height: 60px
+web: true
+---

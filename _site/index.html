@@ -765,10 +765,15 @@ pre {
 .home > .list > .item > .url,
 .blog > .list > .item > .url,
 .projects > .list > .item > .url {
-  width: 100%;
+  width: 90%;
   display: block;
   padding: 20px 0;
   text-decoration: none; }
+.home > .list > .item > .url > .img,
+.blog > .list > .item > .url > .img,
+.projects > .list > .item > .url > .img {
+  width: 10%;
+  transition: all ease-in-out 0.2s; }
 .home > .list > .item > .url > .title,
 .blog > .list > .item > .url > .title,
 .projects > .list > .item > .url > .title {
@@ -786,7 +791,7 @@ pre {
   position: relative;
   top: 2px;
   margin: 0;
-  width: 25%;
+  width: 15%;
   float: right;
   font-weight: 300;
   color: #aaa;
@@ -1476,13 +1481,13 @@ pre {
         
 
         
+
+        
             
                 <li class="item">
-                    <a class="link" href="http://localhost:4000/blog">Blog</a>
+                    <a class="link" href="http://localhost:4000/projects">Projects</a>
                 </li>
             
-        
-
         
 
         
@@ -1508,8 +1513,11 @@ pre {
 <footer class="footer-main">
     Zi-Chao (Alex) Lin © 2019 <a class="link" href="http://localhost:4000/feed.xml" target="_blank"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a>
 
-    <p class="extra">
+    <p class="extra" style="margin-bottom: -5px;">
         <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a> by <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>
+    </p>
+    <p class="extra">
+    Icons made by <a class="link" href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a class="link" href="https://www.flaticon.com/">www.flaticon.com</a>
     </p>
 </footer>
 

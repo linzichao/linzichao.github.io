@@ -35,20 +35,20 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 
 <h2>Work Experiences</h2>
 <h4>Microsoft, AI R&D Center, Taiwan</h4>
-<u>Research and Development Intern</u>@Bing Maps, [Python, C#], Jun.2018 - Present
+<u>Research and Development Intern</u>@Bing Maps, [Python, C#, XML], Jun.2018 - Present
 <ul>
 	<li><b>Designed a new data pipeline for data centers to improve their reliability</b></li>
-	<li><b>Trained machine learning models to analyze the quality of BingGC answers and replaced the threshold-based approach which was determined by scores and rule-based</b></li>
-	<li><b>Ran A/B testing for analyzing models and proved the better performance in models</b></li>
+	<li><b>Replaced the threshold-based approach with machine learning models for analyzing the quality of Bing Maps answers</b></li>
+	<li><b>Ran A/B testing for analyzing models and provided better accuracy and relevance in Bing Maps answers</b></li>
 </ul>
 
 <h4>National Chengchi University, Taiwan</h4>
 <u>Undergraduate Research Assistant</u>@NCCU Blockchain Group, [Node.js, Solidity], Jan.2019 - Sep.2019
 <ul>
 	<li><b>Modified the smart contracts for experiments and surveyed the performance of Ethereum JavaScript API</b></li>
-	<li><b>Developed a prototype for testing blockchain environment and added user interfaces for debugging rapidly</b></li>
+	<li><b>Developed a prototype for testing blockchain environment and added user interfaces for real-time debugging</b></li>
 </ul>
-<u>Undergraduate Research Assistant</u>@<a href="http://cfliao.net/en/doku.php">Software Engineering Lab.</a>, [Lua, Wireshark], Jan.2018 - Jan.2019
+<u>Undergraduate Research Assistant</u>@<a href="http://cfliao.net/en/doku.php">Software Engineering Lab.</a>, [Lua, C++, Wireshark], Jan.2018 - Jan.2019
 <ul>
 	<li><b>Surveyed internet protocols for sensor nodes in home networks, including ICMPv6 and MQTT-SN</b></li>
 	<li><b>Implemented a Lua-based plugin on Wireshark for network monitoring</b></li>
@@ -72,7 +72,7 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 </ul>
 
 <h4>Galaxy Software Services, Taiwan</h4>
-<u>Software Engineer Intern</u>@Financial Business Department, [Visual Basic, MS-SQL], Jul.2017 - Jan.2018
+<u>Software Engineer Intern</u>@Financial Business Department, [Visual Basic, SQL], Jul.2017 - Jan.2018
 <ul>
 	<li><b>Built internal systems and web applications using the Model-View-Controller pattern</b></li>
 	<li><b>Maintained and modified database schema to satisfy the normalization in light of the requirements of banks</b></li>
@@ -87,36 +87,11 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 </ol>
 
 <hr>
-<h2>Projects</h2>
-<u>Web Application for Data Visualization</u>, [R], Jun.2019
-<ul>
-	<li><b>Built a Shiny application for data visualization by R</b></li>
-	<li><b>Designed intuitive and efficient user interface and deployed to shinyapps.io</b></li>
-</ul>
-
-<u>iCourse</u>, [Ruby on Rails], Jun.2018
-<ul>
-	<li><b>Implemented a system for course selection with real course information in NCCU using Ruby on Railsframework and performed unit tests with RSpec</b></li>
-</ul>
-
-<u>2D Action-adventure Game</u>, [Unity, C#], Jan.2018
-<ul>
-	<li><b>Created a 2D game by Unity and demoed to the class</b></li>
-</ul>
-
-<u>3D First Personal Shooting Game</u>, [Unity, C#], Jan.2018
-<ul>
-	<li><b>CDesigned a 3D shooting game using Unity, where players can shoot zombies and protect the base</b></li>
-</ul>
-
-
-
-<hr>
 
 <h2>Technical Skills and Strengths</h2>
 Programming:
 <ul>
-	<li>Python, Javascript, Java, C/C++, C#, SQL</li>
+	<li>Python, Javascript, Java, C#, C/C++, SQL</li>
 </ul>
 Software & Tools:
 <ul>
@@ -124,6 +99,6 @@ Software & Tools:
 </ul>
 Languages:
 <ul>
-	<li>Chinese</li>
-	<li>English (GRE:322/340, TOEFL:104/120, TOEIC:910/990)</li>
+	<li>Chinese - Native</li>
+	<li>English - Fluent (GRE:322/340, TOEFL:104/120, TOEIC:910/990)</li>
 </ul>

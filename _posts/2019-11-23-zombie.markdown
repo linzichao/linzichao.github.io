@@ -1,0 +1,15 @@
+---
+title: "3D First Personal Shooting Game"
+layout: post
+date: 2017-11-06 23:59
+image: ../assets/images/zombie.png
+headerImage: true
+projects: true
+description: "Designed a 3D shooting game using Unity, where players can shoot zombies and protect the base"
+category: project
+author: linzichao
+externalLink: http://ghost.cs.nccu.edu.tw/~s10442/104703042_WebGL
+radius: 0%
+height: 80px
+unity: true
+---

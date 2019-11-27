@@ -2,14 +2,38 @@
 layout: page
 title: Projects
 ---
+<style type="text/css">
+    .proj-list-tag.tag0 {
+        background-color: #81d4fa;
+    }
+    .proj-list-tag.tag1 {
+        background-color: #FF7D40;
+    }
+    .proj-list-tag.tag2 {
+        background-color: #FFCC11;
+    }
+    .proj-list-tag {
+        color: rgba(0,0,0,0.87);
+        border-radius: 5px;
+        font-size: 0.8em;
+        padding: 0px 3px;
+    }
+</style>
 <section class="list">
     {% for post in site.posts %}
         {% if post.projects %}
             <div class="item {% if post.star %}star{% endif %}">
                 <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                    <h3 class="title">{{ post.title }}</h3>
+                    <img class="img" src="{{ post.image }}" alt="Avatar" style="width:100px;height: {{ post.height }};vertical-align:middle;border-radius: {{ post.radius }}"></img>
+                    <aside><time datetime="{{ post.date | date:"%m-%Y" }}">{{ post.date | date: "%b %Y" }}</time></aside>
+                    <h3 class="title" style="padding-left: 20px;">{{ post.title }}</h3>
                 </a>
+                {% if post.web %}<span class="proj-list-tag tag0">Web</span>{% endif %}
+                {% if post.unity %}<span class="proj-list-tag tag1">Unity</span>{% endif %}
+                {% if post.chatbot %}<span class="proj-list-tag tag2">Chatbot</span>{% endif %}
+                <ul style="padding-left: 120px;margin-top: -20px;margin-right: 70px;">
+                    <li>{{post.description}} {% if post.github %}<a href="{{ post.github }}" style="vertical-align:middle;">:octocat:</a>{% endif %}</li>
+                </ul>
             </div>
         {% endif %}
     {% endfor %}

@@ -1,0 +1,16 @@
+---
+title: "LINE Chatbot"
+layout: post
+date: 2018-05-15 23:59
+image: ../assets/images/line.png
+headerImage: true
+projects: true
+description: "A LINE chatbot for introducing Python applications in TA office hours"
+category: project
+author: linzichao
+externalLink: https://github.com/linzichao/chatbot_line
+github: https://github.com/linzichao/chatbot_line
+radius: 0%
+height: 50px
+chatbot: true
+---
