@@ -11,6 +11,6 @@ author: linzichao
 externalLink: https://npsp.ms300k.com.tw
 github: https://github.com/1072-datascience/finalproject-gre320toefl100
 radius: 0%
-height: 90px
+height: 95px
 web: true
 ---

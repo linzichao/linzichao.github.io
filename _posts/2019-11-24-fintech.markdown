@@ -1,0 +1,16 @@
+---
+title: "Customer Service Messenger Chatbot"
+layout: post
+date: 2018-01-12 23:59
+image: ../assets/images/bot.png
+headerImage: true
+projects: true
+description: "A Messenger chatbot to simulate customer service from banks"
+category: project
+author: linzichao
+externalLink: https://github.com/linzichao/Fintech
+github: https://github.com/linzichao/Fintech
+radius: 0%
+height: 75px
+chatbot: true
+---
