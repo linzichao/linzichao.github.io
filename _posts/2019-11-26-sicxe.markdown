@@ -1,0 +1,15 @@
+---
+title: "SIC/XE Simple Assembler and Resolver"
+layout: post
+date: 2017-06-25 23:59
+image: ../assets/images/coding.png
+headerImage: true
+projects: true
+description: "Resolved and assembled the instruction sets of SIC/XE by Javascript"
+category: project
+author: linzichao
+externalLink: http://ghost.cs.nccu.edu.tw/~s10442/sicxe.html
+radius: 10%
+height: 90px
+web: true
+---
