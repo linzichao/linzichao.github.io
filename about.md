@@ -38,8 +38,8 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 <u>Research and Development Intern</u>@Bing Maps, [Python, C#, XML], Jun.2018 - Present
 <ul>
 	<li><b>Designed a new data pipeline for data centers to improve their reliability</b></li>
-	<li><b>Replaced the threshold-based approach with machine learning models for analyzing the quality of Bing Maps answers</b></li>
-	<li><b>Ran A/B testing for analyzing models and provided better accuracy and relevance in Bing Maps answers</b></li>
+	<li><b>Replaced the threshold-based approach with machine learning models for improving the quality of Bing Maps answers</b></li>
+	<li><b>Ran A/B testing for analyzing models and validated enhanced accuracy and geo-relevance in Bing Maps answers</b></li>
 </ul>
 
 <h4>National Chengchi University, Taiwan</h4>
@@ -67,7 +67,7 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 <h4>Academia Sinica, Taiwan</h4>
 <u>Summer Intern</u>@<a href="https://clip.csie.org/">CFDA & CLIP Labs</a>, [Python, Node.js], Jul.2018 - Aug.2018
 <ul>
-	<li><b>Built a music recommender system using KKBOX datasets and Item Concept Embedding</b></li>
+	<li><b>Built a music recommender system using <a href="https://www.kkbox.com/">KKBOX</a> datasets and <a href="https://github.com/cnclabs/ICE">Item Concept Embedding</a></b></li>
 	<li><b>Developed a web system by Node.js to demonstrate recommended results</b></li>
 </ul>
 
@@ -100,6 +100,11 @@ Computer Science Student Association, NCCU, Sep.2016 - Jun.2017
 	<li><b>Managed the property of computer science student association</b></li>
 	<li><b>Held a Christmas party for all students in the department of computer science</b></li>
 	<li><b>Assisted in organizing a summer camp for high school students to learn programming</b></li>
+</ul>
+
+Volleyball Team of Department of Computer Science, NCCU, Feb.2016 - Jan.2017
+<ul>
+	<li><b>Participated in interdepartmental competitions and practiced routinely</b></li>
 </ul>
 
 Cook Club, NCCU, Sep.2016 - Jan.2017
