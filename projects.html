@@ -25,7 +25,7 @@ title: Projects
 <section class="list">
     {% for post in site.posts %}
         {% if post.projects %}
-            <div class="item {% if post.star %}star{% endif %}">
+            <div class="item {% if post.star %}star{% endif %}" id="{{ post.title }}">
                 <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
                     <img class="img" src="{{ post.image }}" alt="Avatar" style="width:100px;height: {{ post.height }};vertical-align:middle;border-radius: {{ post.radius }}"></img>
                     <aside><time datetime="{{ post.date | date:"%m-%Y" }}">{{ post.date | date: "%b %Y" }}</time></aside>
