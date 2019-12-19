@@ -22,7 +22,7 @@ Welcome to contact me via email.
 <ul class="skill-list">
 	<li>Email: <a href="mailto:joy10393@gmail.com">joy10393@gmail.com</a> / <a href="mailto:zclin.admission@gmail.com">zclin.admission@gmail.com</a></li>
 	<li>GitHub: <a href="https://github.com/linzichao">linzichao</a></li>
-	<li>LinkedIn: <a href="https://www.linkedin.com/in/zi-chao-lin-38641615a">Zi-Chao (Alex) Lin</a></li>
+	<li>LinkedIn: <a href="https://www.linkedin.com/in/zi-chao-lin">Zi-Chao (Alex) Lin</a></li>
 </ul>
 
 <hr>
