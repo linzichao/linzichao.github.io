@@ -35,7 +35,7 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 
 <h2>Work Experiences</h2>
 <h4>Microsoft, AI R&D Center, Taiwan</h4>
-<u>Research and Development Intern</u>@Bing Maps, [Python, C#, XML], Jun.2018 - Present
+<u>Research and Development Intern</u>@Bing Maps, [Python, C#, XML], Jun.2018 - Jan.2020
 <ul>
 	<li><b>Designed a new data pipeline for data centers to improve their reliability</b></li>
 	<li><b>Replaced the threshold-based approach with machine learning models for improving the quality of Bing Maps answers</b></li>
@@ -48,7 +48,7 @@ Bachelor of Science in Computer Science, GPA: 4.17/4.3, Ranking: 1/46, Sep.2015 
 	<li><b>Modified the smart contracts for experiments and surveyed the performance of Ethereum JavaScript API</b></li>
 	<li><b>Developed a prototype for testing blockchain environment and added user interfaces for real-time debugging</b></li>
 </ul>
-<u>Undergraduate Research Assistant</u>@<a href="http://cfliao.net/en/doku.php">Software Engineering Lab.</a>, [Lua, C++, Wireshark], Jan.2018 - Jan.2019
+<u>Undergraduate Research Assistant</u>@<a href="http://cfliao.net/en/doku.php">Software Engineering Lab.</a>, [Lua, Wireshark], Jan.2018 - Jan.2019
 <ul>
 	<li><b>Surveyed internet protocols for sensor nodes in home networks, including ICMPv6 and MQTT-SN</b></li>
 	<li><b>Implemented a Lua-based plugin on Wireshark for network monitoring</b></li>
