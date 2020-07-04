@@ -8,9 +8,6 @@ layout: page
 <p>
 Hi, I am Zi-Chao (Alex) Lin, graduating from NCCU with a B.S. in Computer Science. I joined Microsoft Bing Maps as a Research and Development Intern in June 2018. I have strong backgrounds in backend development knowledge, ubiquitous computing, and machine learning.
 </p>
-<p><em>
-Now I am actively pursuing the Fall 2020 admission of a master's degree in Computer Science in the U.S.
-</em></p>
 <p>
 Welcome to contact me via email.
 </p>
@@ -20,7 +17,7 @@ Welcome to contact me via email.
 <h2>Contact Information</h2>
 
 <ul class="skill-list">
-	<li>Email: <a href="mailto:joy10393@gmail.com">joy10393@gmail.com</a> / <a href="mailto:zclin.admission@gmail.com">zclin.admission@gmail.com</a></li>
+	<li>Email: <a href="mailto:joy10393@gmail.com">joy10393@gmail.com</a></li>
 	<li>GitHub: <a href="https://github.com/linzichao">linzichao</a></li>
 	<li>LinkedIn: <a href="https://www.linkedin.com/in/zi-chao-lin">Zi-Chao (Alex) Lin</a></li>
 </ul>
