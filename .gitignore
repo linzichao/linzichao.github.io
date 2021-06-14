@@ -63,3 +63,5 @@ _site
 Gemfile.lock
 .bundle
 vendor/
+
+..bfg-report
